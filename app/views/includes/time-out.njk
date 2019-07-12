@@ -1,0 +1,24 @@
+<div id="timeout" class="timeout-closed">
+    <div id="timeout-bg" tabindex="-1"></div>
+    <div class="govuk-width-container">
+        <div class="govuk-main-wrapper">
+            <div class="govuk-grid-row">
+                <div id="timeout-dialog" class="govuk-grid-column-full timeout-panel" role="dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+                        <h2 id="dialog-title" class="govuk-heading-xl">Your session will end in <span class="timeout-expires">5 minutes</span></h2>
+                        <p class="govuk-body">You have not done anything on the service for a while.</p>
+                        <p id="dialog-description" class="govuk-body">
+                            Your session will end in <span class="timeout-expires">5 minutes</span> if you do not do anything on the page. You'll need to start your application again if that happens.
+                        </p>
+                        
+                        {{ govukButton({
+                            text: "Resume your application",
+                            href: "/",
+                            attributes: {
+                                id: 'timeout-refresh'
+                            }
+                        }) }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div

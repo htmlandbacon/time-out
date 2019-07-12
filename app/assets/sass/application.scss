@@ -13,3 +13,66 @@ $govuk-global-styles: true;
 @import "components/cookie-banner";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+.blue-border {
+    border: 5px solid #005ea5;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+@media (min-width: 40.0625em) {
+    .blue-border {
+        padding: 20px
+    }
+}
+.blue-border h2 {
+    margin-top: 0;
+}
+.blue-border p:last-child {
+    margin-bottom: 0;
+}
+.display-block {
+    display: block;
+}
+
+span.nobr { white-space: nowrap; }
+
+.govuk-hint.govuk-hint-black {
+    color: #000;
+}
+
+#timeout {
+    margin-top:10%;
+}
+#timeout, #timeout-bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+#timeout-bg {
+    background: #000;
+    opacity: 0.8;
+}
+.timeout-panel {
+    position: relative;
+    z-index: 999;
+    background: #fff;
+    width: inherit;
+    margin: auto 15px;
+    padding: 45px;
+    overflow: auto;
+}
+@media (min-width: 530px) {
+    #timeout-panel {
+        margin: auto;
+    }
+}
+.timeout-closed {
+    display:none;
+}
+
+.timeout-freeze {
+    overflow: hidden;
+}
+
