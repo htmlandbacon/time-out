@@ -14,6 +14,9 @@
       if (exp - Date.now() > 5 * 60 * 1000) {
         // more than 5 minutes left
       } else if (exp - Date.now() > 0) {
+        if (timeoutRefresh) {
+          timeoutRefresh.focus();
+        }
         window.addEventListener('keydown', function (e) {
           if (e.keyCode === 9) {
             e.preventDefault();
